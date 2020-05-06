@@ -1,0 +1,8 @@
+version: "2"
+
+services:
+  app-golang:
+    build: /.
+    ports:
+      - "8081:8081"
+      - "5672:5672"

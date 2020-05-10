@@ -24,7 +24,7 @@ func failOnError(err error, msg string) {
 	}
 }
 func envio_datos(caso Caso) {
-	conn, err := amqp.Dial("amqp://guest:guest@35.237.232.19:5672/")
+	conn, err := amqp.Dial("amqp://guest:guest@35.237.178.105:5672/")
 	failOnError(err, "Failed to connect to RabbitMQ")
 	defer conn.Close()
 
